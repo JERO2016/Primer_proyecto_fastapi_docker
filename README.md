@@ -126,7 +126,7 @@ Los datos de la base de datos se almacenan en un volumen llamado postgres_data.
 
 ### Autor
 
-C. Jesús Emmanuel Ramírez Orozco AKA "El Chile Vengador"
+C. Jesús Emmanuel Ramírez Orozco
 
 Proyecto de aprendizaje basado en el artículo
 "Dockerizing FastAPI and PostgreSQL: Effortless Containerization — A Step-by-Step Guide"

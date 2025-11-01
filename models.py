@@ -1,5 +1,5 @@
 from database import Base
-from sqlalchemy import Column, Integer, String, TIMESTAMP, Boolean, text
+from sqlalchemy import Column, Integer, String, TIMESTAMP, Boolean, text, DateTime
 from datetime import datetime, timezone
 
 class Post(Base):
@@ -8,8 +8,7 @@ class Post(Base):
     title = Column(String, nullable=False)
     content = Column(String, nullable=False)
     published = Column(Boolean, server_default='TRUE')
-    created_at = Column(TIMESTAMP(timezone=True)),
-server_default = ('now()')
+    created_at = Column(TIMESTAMP(timezone=True), server_default=text('now()'))
 
 class Author(Base):
     __tablename__ = "authors"  # nombre de la tabla en la base de datos

@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional  # se agrega esta línea
+
 
 class PostBase(BaseModel):
     content: str
@@ -18,7 +20,7 @@ class AuthorBase(BaseModel):
     apodo: str
 
 class AuthorCreate(AuthorBase):
-    fecha_registro: datetime | None = None
-
+    fecha_registro: Optional[datetime] = None
+    
     class Config:
         orm_mode = True

@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-
+from datetime import datetime
 
 class PostBase(BaseModel):
     content: str
@@ -10,5 +10,15 @@ class PostBase(BaseModel):
 
 
 class CreatePost(PostBase):
+    class Config:
+        orm_mode = True
+        
+class AuthorBase(BaseModel):
+    nombre: str
+    apodo: str
+
+class AuthorCreate(AuthorBase):
+    fecha_registro: datetime | None = None
+
     class Config:
         orm_mode = True

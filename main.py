@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import models
 from database import engine
 import posts
+from authors import router as authors_router
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -17,4 +18,4 @@ async def root():
 async def say_hello(name: str):
     return {"message": f"Hello {name}"}
 
-print("✅ Cambios detectados correctamente")
+app.include_router(authors_router)

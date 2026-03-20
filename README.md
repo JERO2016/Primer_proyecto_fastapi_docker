@@ -70,7 +70,7 @@ git clone https://github.com/JERO2016/Primer_proyecto_fastapi_docker.git
 
 ### 2 Entrar al directorio del proyecto
 
-cd C:\Users\jrami\Desktop\MONROY\docker_proyecto01
+cd Primer_proyecto_fastapi_docker
 
 ### 3️ Construir y levantar los contenedores
 
@@ -128,5 +128,5 @@ Los datos de la base de datos se almacenan en un volumen llamado postgres_data.
 
 C. Jesús Emmanuel Ramírez Orozco
 
-Proyecto de aprendizaje basado en el artículo
+Proyecto de aprendizaje desarrollado como parte de formación práctica en Data Engineering y desarrollo backend con Python, basado en el artículo
 "Dockerizing FastAPI and PostgreSQL: Effortless Containerization — A Step-by-Step Guide"

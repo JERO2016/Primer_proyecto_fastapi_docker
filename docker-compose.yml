@@ -6,7 +6,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./:/code:ro
+      - ./:/code
     environment:
       - DATABASE_URL=postgresql://postgres:Bright#1270@db:5433/dockert
     ports:

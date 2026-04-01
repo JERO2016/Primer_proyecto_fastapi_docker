@@ -66,7 +66,7 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina:
 
 Abre tu terminal o Git Bash y ejecuta:
 
-git clone https://github.com/JERO2016/Primer_proyecto_fastapi_docker.git
+git clone cd Primer_proyecto_fastapi_docker.
 
 ### 2 Entrar al directorio del proyecto
 
